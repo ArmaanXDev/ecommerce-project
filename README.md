@@ -25,9 +25,6 @@ A modern e-commerce website built with HTML, CSS, and JavaScript, featuring a re
 
 [View Live Demo](https://armaanxdev.github.io/ecommerce-project/)
 
-## Screenshots
-
-![ShopHub Homepage](assets/images/hero1.jpg)
 
 ## Getting Started
 
