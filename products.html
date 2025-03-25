@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopHub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://files.oaiusercontent.com/file-L3xJ2UpjLbVC9nsgiJ5XMJ?se=2025-03-25T15%3A43%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D215a5f41-37db-4688-aa85-a735315156d0.webp&sig=CHJpzyCzo24CHqbRck7pWBpWiXfDEC35Kn%2BTp1P6xYE%3D" alt="ShopHub Logo" class="logo-img">
+            ShopHub
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart <span class="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+
+    <main class="products-page">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-section">
+                <h4>Categories</h4>
+                <div id="category-filters"></div>
+            </div>
+            <div class="filter-section">
+                <h4>Price Range</h4>
+                <input type="range" id="price-range" min="0" max="1000" value="1000">
+                <span id="price-value">$1000</span>
+            </div>
+        </aside>
+
+        <section class="products-section">
+            <div class="products-header">
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Search products...">
+                </div>
+                <div class="sort-options">
+                    <select id="sort">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-grid" id="products-container">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/utils.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
